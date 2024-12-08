@@ -44,8 +44,8 @@ int main(int argc, char *argv[])
         
         while (!feof(input)) {
                 emplchar(fgetc(input), str, MAX_CHAR - 1);
-                
-                 cmp = regexec(&preg, str, 0, NULL, 0);  
+
+                cmp = regexec(&preg, str, 0, NULL, 0);  
 
                 if (cmp == 0) {
                         int a = atoi(&str[4]);
